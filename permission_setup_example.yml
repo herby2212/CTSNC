@@ -1,0 +1,73 @@
+groups:
+  Member:
+    permissions:
+    - modifyworld.*
+    - YourName.Default
+    options:
+      default: true
+  Admin:
+    permissions:
+    - -YourName.Mod
+    - -YourName.Dev
+    - -YourName.Youtuber
+    - -YourName.Builder
+    - -YourName.Legend
+    - -YourName.Premium
+    - -YourName.Default
+    - -YourName.unused2
+    - -YourName.unused3
+    - -YourName.unused4
+    - -YourName.unused5
+    - -YourName.unused6
+    - -YourName.unused7
+    - -YourName.unused8
+    - -YourName.unused9
+    - -YourName.unused10
+    - -YourName.unused11
+    - -YourName.unused12
+    - -YourName.unused13
+    - '*'
+    - YourName.Admin
+  YouTuber:
+    inheritance:
+    - Member
+    permissions:
+    - -YourName.Default
+    - YourName.Youtuber
+  Moderator:
+    inheritance:
+    - Member
+    - YouTuber 
+    - Builder
+    permissions:
+    - -YourName.Default
+    - -YourName.Youtuber
+    - -YourName.Builder
+    - YourName.Moderator
+  Developer:
+    inheritance:
+    - Member
+    permissions:
+    - -YourName.Default
+    - YourName.Dev
+  Builder:
+    inheritance:
+    - Member
+    permissions:
+    - -YourName.Default
+    - YourName.Builder
+  Premium:
+    inheritance:
+    - Member
+    permissions:
+    - -YourName.Default
+    - YourName.Premium
+  Legend:
+    inheritance:
+    - Member
+    - Premium
+    permissions:
+    - -YourName.Default
+    - -YourName.Premium
+    - YourName.Legend
+schema-version: 1

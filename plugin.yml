@@ -1,0 +1,42 @@
+name: CTSNC
+main: de.Herbystar.CTSNC.Main
+version: 12.9
+author: Herbystar
+website: https://herbystar.eu/resources/ctsnc-animated-scoreboard-and-tablist-nametag-chat-protocol-hack-1-8-1-12.8/
+softdepend: [Vault, PlaceholderAPI, PlayerPoints, PermissionsEx, GroupManager, Thirst, PvpLevels, RPGPlayerLeveling, Autorank, IslandWorld, LuckPerms]
+loadbefore: [CTSNC_Tablist, CTSNC_Scoreboard, CTSNC_Chat, CTSNC_DisplayName, CTSNC_Stats, CTSNC_NameTag, CTSNC_LegacyScoreboard, CTSNC_Christmas]
+description: Complete editable Scoreboard + Tablist and NameTag System!
+commands:
+  CTS:
+    usage: /CTS
+    description: Main command!
+  CC:
+    usage: /CC
+    description: Alias cmd for /CTS cc!
+permissions:
+  CTSNC.*:
+    description: Give you all permissions!
+    children:
+      CTSNC.CMD.Reload: true
+      CTSNC.CMD.AFK: true
+      CTSNC.CMD.Ping: true
+      CTSNC.CMD.TPS: true
+      CTSNC.CMD.Hooks: true
+      CTSNC.CMD.Time: true
+      CTSNC.CMD.Scoreboard: true
+      CTSNC.CMD.Chat: true
+      CTSNC.CMD.Tablist: true
+      CTSNC.CMD.ChatClear: true
+      CTSNC.CMD.ActionBar: true
+      CTSNC.CMD.Title: true
+      CTSNC.CMD.Default: true
+      CTSNC.CMD.Stats: true
+      CTSNC.CHAT.Staff: true
+      CTSNC.CMD.Stopwatch: true
+      CTSNC.CMD.Me.*: true
+      CTSNC.CMD.CustomTags: true
+  CTSNC.CMD.Me.*:
+    description: Give you all /me command permissions!
+    children:
+      CTSNC.CMD.Me.Scoreboard: true
+      CTSNC.CMD.Me.Tablist: true

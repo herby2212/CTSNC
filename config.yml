@@ -1,0 +1,112 @@
+#Do not change the main Structure of the config or you get a error message on server start!
+CTSNC:
+  Debug: false
+  AutoUpdater: true
+  AutoUpdateDownload: true
+  OldVersionClean: true
+  ServerVersion: false
+  BungeeCord: false
+  CustomPrefix: '&c[&eCTSNC&c] &6<9> '
+  TimeFormat: 'HH:mm:ss'
+  TeleportOnJoin: true
+  PlayerStatsData: true
+  ShortChatClearCmd: false
+  GMT+: 0
+  FirstSetup: true
+  AFK_System:
+    AutoAFKMode: true
+    AutoAFKModeSchedule(InTicks): 200
+    AutoAFKModeMessage:
+      Private: true
+      Broadcast: true
+  ONJOIN:
+    Command:      
+      Player:
+        Enabled: false
+        Cmd:
+        - "say Hi! :)"
+      Console:
+        Enabled: true
+        Cmd:
+        - "say Welcome player [ctsnc-player-name]!"
+    JoinMessage:
+      Enabled: true
+      Content: '&e&l[ctsnc-player-name] &ahas joined the Server![ctsnc-nextline]&a&lWelcome
+        to the server! &c<1>'
+    Titles:
+      Enabled: true
+      Title:
+        Content: '&aWelcome &e&l[ctsnc-player-name]&a!'
+        Times:
+          FadeIn: 30
+          Stay: 40
+          FadeOut: 30
+      Subtitle:
+        Content: '&aOn a server with &c&lCTSNC&a!'
+        Times:
+          FadeIn: 30
+          Stay: 40
+          FadeOut: 30
+    ActionBar:
+      Enabled: true
+      Normal:
+        Enabled: false
+        Content: '&aWelcome on this Server!'
+      Animated:
+        Enabled: true
+        Content: '&aWelcome on this &6Server&a! &aThis is a animated &6ActionBar&a!'
+        MaxLenght: 16
+        SpaceBetweenStartAndEnd: 4
+        DisplayDuration: 150
+  WELCOME_BACK:
+    ServerRestartOverride: false
+    Enabled: true
+    Titles:
+      Enabled: true
+      Title:
+        Content: '&aWelcome &cback &e&l[ctsnc-player-name]&a!'
+      Subtitle:
+        Content: '&aOn a server with &c&lCTSNC&a!'
+    ActionBar:
+      Enabled: true
+      Normal:
+        Enabled: false
+        Content: '&aWelcome again &e&l[ctsnc-player-name]&a!'
+      Animated:
+        Enabled: true
+        Content: '&aWelcome again &e[ctsnc-player-name]&a! &aThis is a animated &6ActionBar&a!'
+        MaxLenght: 16
+        SpaceBetweenStartAndEnd: 4
+        DisplayDuration: 150
+  ONQUIT:
+    QuitMessage:
+      Enabled: true
+      Content: '&e&l[ctsnc-player-name] &chas left the Server!'
+  MESSAGES:
+    Spawn:
+      Enabled: true
+      Content: '&aYou were successfully teleported to the Spawn!'
+    NoPermission:
+      Enabled: true
+      Content: '&cYou dont have the right permission!'
+    Ping:
+      Broadcast:
+        Enabled: false
+        Content: '&aThe ping of &e[ctsnc-player-name] &ais &6[ctsnc-ping]&a!'
+      Private:
+        Enabled: true
+        Content: '&aYour current ping is &c[ctsnc-ping]&a!'
+    AFK:
+      Broadcast:
+        Enabled: true
+        Content_Enabled: '&aThe player &e[ctsnc-player-name] &ais now AFK!'
+        Content_Disabled: '&cThe player &e[ctsnc-player-name] &cis not more AFK!'
+      Private:
+        Enabled: true
+        Content_Enabled: '&aYou are now in the &6&lAFK &aMode!'
+        Content_Disabled: '&cYou are not more in the &6&lAFK &cMode!'
+  WorldSupport: false
+  Worlds:
+  - world
+  - hub
+  - lobby     
