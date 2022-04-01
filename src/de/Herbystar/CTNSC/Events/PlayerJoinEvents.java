@@ -19,6 +19,7 @@ import de.Herbystar.CTSNC_Modules.Christmas.Christmas;
 import de.Herbystar.CTSNC_Modules.DisplayName.DisplayName;
 import de.Herbystar.CTSNC_Modules.NameTag.CustomTags;
 import de.Herbystar.CTSNC_Modules.Scoreboard.Scoreboards;
+import de.Herbystar.TTA.Utils.TTA_BukkitVersion;
 
 public class PlayerJoinEvents implements Listener {
 	
@@ -60,28 +61,29 @@ public class PlayerJoinEvents implements Listener {
 				if(Main.instance.getServerVersion().equalsIgnoreCase("v1_9_R2.")) {
 					p.sendMessage("1.9.4");
 				}
-				if(Bukkit.getVersion().contains("1.10")) {
+				if(TTA_BukkitVersion.isVersion("1.10", 2)) {
 					p.sendMessage("1.10");
 				}
-				if(Bukkit.getVersion().contains("1.11")) {
+				if(TTA_BukkitVersion.isVersion("1.11", 2)) {
 					p.sendMessage("1.11");
 				}
-				if(Bukkit.getVersion().contains("1.12")) {
+				if(TTA_BukkitVersion.isVersion("1.12", 2)) {
 					p.sendMessage("1.12");
 				}
-				if(Bukkit.getVersion().contains("1.13")) {
+				if(TTA_BukkitVersion.isVersion("1.13", 2)) {
 					p.sendMessage("1.13");
 				}
-				if(Bukkit.getVersion().contains("1.14")) {
+				if(TTA_BukkitVersion.isVersion("1.14", 2)) {
 					p.sendMessage("1.14");
 				}
 			}
+			/*
 			if(Main.instance.getConfig().getBoolean("CTSNC.AutoUpdater") == true) {
 				if(Main.instance.UpdateAviable == true) {
 					p.sendMessage("§c[§eCTSNC§c] §a-=> Update is available! <=-");
-					p.sendMessage("§aDownload: §ehttps://herbystar.eu/resources/ctsnc-animated-scoreboard-and-tablist-nametag-chat-protocol-hack-1-8-1-11.8/");
 				}
 			}
+			*/
 		}		
 		if(m.TablistModule() == true) {
 			if(!Main.Tablists.contains(p)) {

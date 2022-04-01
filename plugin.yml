@@ -1,8 +1,8 @@
 name: CTSNC
 main: de.Herbystar.CTSNC.Main
-version: 12.9
+version: 13.0-SNAPSHOT
 author: Herbystar
-website: https://herbystar.eu/resources/ctsnc-animated-scoreboard-and-tablist-nametag-chat-protocol-hack-1-8-1-12.8/
+website: https://github.com/herby2212/CTSNC
 softdepend: [Vault, PlaceholderAPI, PlayerPoints, PermissionsEx, GroupManager, Thirst, PvpLevels, RPGPlayerLeveling, Autorank, IslandWorld, LuckPerms]
 loadbefore: [CTSNC_Tablist, CTSNC_Scoreboard, CTSNC_Chat, CTSNC_DisplayName, CTSNC_Stats, CTSNC_NameTag, CTSNC_LegacyScoreboard, CTSNC_Christmas]
 description: Complete editable Scoreboard + Tablist and NameTag System!

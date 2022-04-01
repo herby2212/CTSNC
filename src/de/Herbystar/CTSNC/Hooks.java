@@ -22,6 +22,8 @@ import com.gamingmesh.jobs.Jobs;
 import com.lenis0012.bukkit.pvp.PvpLevels;
 import com.massivecraft.factions.Factions;
 
+import de.Herbystar.TTA.Utils.TTA_BukkitVersion;
+
 public class Hooks {
 
 	public Economy eco = null;
@@ -151,7 +153,9 @@ public class Hooks {
 	//Depends Hook (If false CTSNC not work!)
 	public boolean CheckDepends() {
 		if(Bukkit.getServer().getPluginManager().getPlugin("TTA") != null) {
-			return true;
+			if(Bukkit.getServer().getPluginManager().getPlugin("TTA").isEnabled() == true) {
+				return true;
+			}
 		}
 		return false;		
 	}	
@@ -184,25 +188,25 @@ public class Hooks {
 		if(Main.instance.getServerVersion().equalsIgnoreCase("v1_9_R2.")) {
 			Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMinecraft 1.9.4 Support §aenabled!");
 		}
-		if(Bukkit.getVersion().contains("1.10")) {
+		if(TTA_BukkitVersion.isVersion("1.10", 2)) {
 			Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMinecraft 1.10 Support §aenabled!");
 		}
-		if(Bukkit.getVersion().contains("1.11")) {
+		if(TTA_BukkitVersion.isVersion("1.11", 2)) {
 			Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMinecraft 1.11 Support §aenabled!");
 		}
-		if(Bukkit.getVersion().contains("1.12")) {
+		if(TTA_BukkitVersion.isVersion("1.12", 2)) {
 			Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMinecraft 1.12 Support §aenabled!");
 		}
-		if(Bukkit.getVersion().contains("1.13")) {
+		if(TTA_BukkitVersion.isVersion("1.13", 2)) {
 			Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMinecraft 1.13 Support §aenabled!");
 		}
-		if(Bukkit.getVersion().contains("1.14")) {
+		if(TTA_BukkitVersion.isVersion("1.14", 2)) {
 			Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMinecraft 1.14 Support §aenabled!");
 		}
-		if(Bukkit.getVersion().contains("1.15")) {
+		if(TTA_BukkitVersion.isVersion("1.15", 2)) {
 			Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMinecraft 1.15 Support §aenabled!");
 		}
-		if(Bukkit.getVersion().contains("1.16")) {
+		if(TTA_BukkitVersion.isVersion("1.16", 2)) {
 			Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMinecraft 1.16 Support §aenabled!");
 		}
 	}
