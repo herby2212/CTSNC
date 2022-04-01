@@ -336,8 +336,8 @@ public class ConfigGenerator {
 		YamlConfiguration cm = YamlConfiguration.loadConfiguration(christmas);
 		
 		cm.addDefault("SnowFall", true);
-		cm.addDefault("SantaHead", true);
-		cm.addDefault("ChristmasTreeBanner", false);
+		cm.addDefault("SantaHead", false);
+		cm.addDefault("ChristmasTreeBanner", true);
 		cm.addDefault("WaterToSnow", false);	
 		cm.options().copyDefaults(true);
 		saveConfig(cm, christmas);

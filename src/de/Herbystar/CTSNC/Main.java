@@ -64,10 +64,7 @@ public class Main extends JavaPlugin {
 			Bukkit.getMessenger().registerOutgoingPluginChannel(instance, "BungeeCord");
 			Bukkit.getServer().getMessenger().registerIncomingPluginChannel(instance, "BungeeCord", bc);	
 		}
-		
-		
-//		Christmas = new Christmas(instance);
-		
+				
 		cg.CreateConfigs();
 		Bukkit.getServer().getConsoleSender().sendMessage("§c[§eCTSNC§c] §eConfig Generation §asuccessful!");
 		
