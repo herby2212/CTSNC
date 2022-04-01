@@ -1,6 +1,5 @@
 package de.Herbystar.CTSNC;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
@@ -74,7 +73,7 @@ public class Main extends JavaPlugin {
 		
 		h.SendHooks(null);
 		m.sendModules();
-		StartMetrics();
+		//StartMetrics();
 		StartMySQL();
 		h.ServerVersionHook();
 		h.WorldSupportHook();
@@ -157,6 +156,7 @@ public class Main extends JavaPlugin {
 		saveConfig();	
 	}
 	
+	/*
 	private void StartMetrics() {
 		if(Files.config10.getBoolean("CTSNC.Metrics.Enabled") == true) {
 			try {
@@ -171,6 +171,7 @@ public class Main extends JavaPlugin {
 			Bukkit.getConsoleSender().sendMessage("§c[§eCTSNC§c] §eMetrics §cdisabled!");
 		}
 	}
+	*/
 	
 	private void StartMySQL() {
 		if(Files.config9.getBoolean("CTSNC.MySQL.Enabled") == true) {
