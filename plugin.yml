@@ -1,6 +1,6 @@
 name: CTSNC
 main: de.Herbystar.CTSNC.Main
-version: 13.0-SNAPSHOT
+version: 13.0
 author: Herbystar
 website: https://github.com/herby2212/CTSNC
 softdepend: [Vault, PlaceholderAPI, PlayerPoints, PermissionsEx, GroupManager, Thirst, PvpLevels, RPGPlayerLeveling, Autorank, IslandWorld, LuckPerms]
