@@ -1,5 +1,5 @@
 # CTSNC
-##### Supported MC versions: 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17
+##### Supported MC versions: 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19
 
 ## General
 CTSNC, standing for **Custom Chat, Tablist, Scoreboard, NameTag & Chat**, is a all-round solution **based on multiple modules** each featuring a dedicated function while CTSNC acts as the core.
@@ -35,3 +35,6 @@ In this case please create a **[Issue](https://github.com/herby2212/CTSNC/issues
 **Requires the TTA plugin** which can be found here: https://github.com/herby2212/TTA
 
 More informations regarding variables, commands, setup and additional topics will soon be migrated into the wiki.
+
+### Need help?
+Feel free to create an [Issue](https://github.com/herby2212/CTSNC/issues) or visit the discord channel: https://discord.gg/Q4BNfu4y3K
